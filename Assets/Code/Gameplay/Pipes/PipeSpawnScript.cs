@@ -1,21 +1,19 @@
 using UnityEngine;
 
-namespace GameObjects.Pipes
+namespace Code.Gameplay.Pipes
 {
     public class PipeSpawnScript : MonoBehaviour
     {
-        private float _timer = 0;
+        private float _timer;
         public GameObject pipe;
         public float spawnRate;
         public float heightOffset = 10;
         
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             SpawnPipe();
         }
-
-        // Update is called once per frame
+        
         void Update()
         {
             if (_timer < spawnRate)
