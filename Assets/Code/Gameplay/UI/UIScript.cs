@@ -1,4 +1,5 @@
 ﻿using Code.Managers;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +11,7 @@ namespace Code.Gameplay.UI
         private GameObject gameOverScreen;
         
         [SerializeField]
-        private Text scoreText;
+        private TextMeshProUGUI scoreText;
         
         [SerializeField]
         private Button restartButton;
