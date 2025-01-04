@@ -47,8 +47,11 @@ namespace Code.Managers
         [ContextMenu("Increase score")]
         public void AddScore(int scoreToAdd)
         {
-            CurrentScore += scoreToAdd;
-            OnScoreChanged?.Invoke(CurrentScore);
+            if (!IsGameOver)
+            {
+                CurrentScore += scoreToAdd;
+                OnScoreChanged?.Invoke(CurrentScore);
+            }
         }
     }
 }
