@@ -1,10 +1,14 @@
 ﻿using Code.Managers;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Code.Gameplay
 { 
     public class CollisionObject : MonoBehaviour
     { 
+        [SerializeField] [CanBeNull] private AudioClip scoreSound;
+        [SerializeField] [CanBeNull] private AudioClip collisionSound;
+        [SerializeField] [CanBeNull] private AudioClip fallSound;
         protected bool CollisionEndsGame { private get; set; }
         
         protected bool CollisionIncreasesScore { private get; set; }
@@ -17,9 +21,10 @@ namespace Code.Gameplay
         {
             if (CollisionEndsGame)
             {
-                if (collision.gameObject.layer is 3)
+                if (collision.gameObject.layer is 3 && !GameManager.Instance.IsGameOver)
                 {
                     GameManager.Instance.EndGame();
+                    AudioManager.Instance.PlayAudio(collisionSound);
                 }
             }
         }
@@ -28,17 +33,19 @@ namespace Code.Gameplay
         {
             if (CollisionEndsGame)
             {
-                if (collision.gameObject.layer is 3)
+                if (collision.gameObject.layer is 3 && !GameManager.Instance.IsGameOver)
                 {
                     GameManager.Instance.EndGame();
+                    AudioManager.Instance.PlayAudio(fallSound);
                 }
             }
 
             if (CollisionIncreasesScore)
             {
-                if (collision.gameObject.layer is 3)
+                if (collision.gameObject.layer is 3 && !GameManager.Instance.IsGameOver)
                 {
                     GameManager.Instance.AddScore(1);
+                    AudioManager.Instance.PlayAudio(scoreSound);
                 }
             }
         }
