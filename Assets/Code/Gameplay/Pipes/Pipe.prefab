@@ -147,7 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4b786fbde1464aa86a6c26a89852a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicScript: {fileID: 0}
+  scoreSound: {fileID: 0}
+  collisionSound: {fileID: 8300000, guid: 8b23b175a78d6b5458322e3a6c9905d0, type: 3}
 --- !u!1 &4072114221181588933
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,7 +296,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4b786fbde1464aa86a6c26a89852a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicScript: {fileID: 0}
+  scoreSound: {fileID: 0}
+  collisionSound: {fileID: 8300000, guid: 8b23b175a78d6b5458322e3a6c9905d0, type: 3}
 --- !u!1 &4110579330060618432
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,7 +389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffb6e046fde82647a3bc1d87d654b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logicScript: {fileID: 0}
+  scoreSound: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
+  collisionSound: {fileID: 0}
 --- !u!1 &5949043760748675125
 GameObject:
   m_ObjectHideFlags: 0
