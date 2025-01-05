@@ -14,7 +14,7 @@ TagManager:
   - Birb
   - Water
   - UI
-  - 
+  - Clouds
   - 
   - 
   - 
@@ -43,6 +43,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 655375829
+    locked: 0
+  - name: Birb
+    uniqueID: 3692046179
     locked: 0
   m_RenderingLayers:
   - Default
