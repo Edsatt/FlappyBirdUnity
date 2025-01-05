@@ -6,9 +6,9 @@ I started off following a tutorial from GameMakers ToolKit, using this project a
 - Game over detection
 - TextMeshPro assets
 - AudioManager to play sound effects
+- Clouds using the particle system
 
 ToDo:
-- Clouds using the particle system
 - Animated sprite
 - Increase speed with score
 - Randomise space between pipes
