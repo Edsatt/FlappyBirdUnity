@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8274956444033724304}
   - component: {fileID: 6122486888067510107}
   - component: {fileID: 4266512709754592006}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BottomPipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreSound: {fileID: 0}
   collisionSound: {fileID: 8300000, guid: 8b23b175a78d6b5458322e3a6c9905d0, type: 3}
+  fallSound: {fileID: 0}
 --- !u!1 &4072114221181588933
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +162,7 @@ GameObject:
   - component: {fileID: 1029131480097013713}
   - component: {fileID: 562687635677496632}
   - component: {fileID: 108870349392724193}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TopPipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,6 +299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreSound: {fileID: 0}
   collisionSound: {fileID: 8300000, guid: 8b23b175a78d6b5458322e3a6c9905d0, type: 3}
+  fallSound: {fileID: 0}
 --- !u!1 &4110579330060618432
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +311,7 @@ GameObject:
   - component: {fileID: 8449756481743770245}
   - component: {fileID: 349053504005738475}
   - component: {fileID: 5387894858655081372}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,6 +393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreSound: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
   collisionSound: {fileID: 0}
+  fallSound: {fileID: 0}
 --- !u!1 &5949043760748675125
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +404,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6761101196750848259}
   - component: {fileID: 3066184551153996465}
-  m_Layer: 0
+  - component: {fileID: 6536874609068861254}
+  m_Layer: 3
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,3 +444,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 8
   deadZone: -44
+--- !u!210 &6536874609068861254
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5949043760748675125}
+  m_Enabled: 1
+  m_SortingLayerID: -602921117
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
